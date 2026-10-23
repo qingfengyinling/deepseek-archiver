@@ -154,17 +154,6 @@ node tests/run_ui_test.mjs          # 走完整导出流程（mock 接口）
 python tests/check_docx.py          # 校验生成的 docx 结构
 ```
 
----
-
-## 六、接口说明（给自己看的）
-
-脚本用的是网页端自己的接口，和浏览器 F12 里看到的一致：
-
-```
-GET /api/v0/chat_session/fetch_page?lte_cursor.pinned=false&lte_cursor.updated_at=<ts>
-      → data.biz_data.chat_sessions[]        # 会话列表（分页）
-GET /api/v0/chat/history_messages?chat_session_id=<id>
-      → data.biz_data.chat_messages[]        # 消息列表
         └─ fragments[]: REQUEST(你的话) / RESPONSE(AI 的话) / THINK(思考) / FILE(附件)
 ```
 
