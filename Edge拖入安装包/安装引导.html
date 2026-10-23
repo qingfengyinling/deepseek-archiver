@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DeepSeek 归档 · Edge 安装引导</title>
+<style>
+body{margin:0;background:#f2f5fa;color:#17283e;font:17px/1.8 "Microsoft YaHei",sans-serif}main{max-width:760px;margin:50px auto;background:white;padding:40px;border-radius:20px}h1{line-height:1.4}li{margin:15px 0}a{color:#175fbb}code{background:#eef2f8;padding:3px 7px;border-radius:5px}.button{display:inline-block;background:#175fbb;color:white;padding:12px 24px;border-radius:10px;text-decoration:none}small{color:#52647a}@media(max-width:700px){main{margin:15px;padding:24px}}
+</style>
+<main>
+<p>DEEPSEEK ARCHIVER / EDGE</p>
+<h1>把聊天记录保存为 Word</h1>
+<p>安装油猴后，把同一文件夹里的 <strong>deepseek-archiver.user.js</strong> 拖入 Edge 网页区域，即可进入安装确认页。</p>
+<ol>
+<li><a href="https://www.tampermonkey.net/" target="_blank" rel="noopener noreferrer">安装 Tampermonkey（选择 Microsoft Edge）</a>。</li>
+<li>地址栏输入 <code>edge://extensions</code>，在 Tampermonkey 的“详细信息”里开启<strong>允许访问文件 URL</strong>。</li>
+<li>开启<strong>允许用户脚本</strong>；没有这个选项时，在扩展管理页开启<strong>开发人员模式</strong>。若提示授予脚本运行权限，请允许。</li>
+<li>拖入 <code>deepseek-archiver.user.js</code>，在油猴确认页点击<strong>安装</strong>。</li>
+<li>打开并登录 <a href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer">DeepSeek</a>，刷新后在右下角使用<strong>DeepSeek 归档 · Word</strong>。</li>
+</ol>
+<p><a class="button" href="deepseek-archiver.user.js">打开油猴安装脚本</a></p>
+<p>如果按钮只显示代码，请从文件夹拖入脚本；仍无法安装时，在油猴“管理面板 → 实用工具 → 导入 → 选择文件”中选择该脚本。也可“添加新脚本”，粘贴脚本全部内容后按 Ctrl+S。</p>
+<small>ZIP 请先解压。脚本不需要 Python。保留原版导出功能；真实账号接口和浏览器安装结果需在你的 Edge 中确认。<br><a href="https://www.tampermonkey.net/faq.php#Q102">油猴官方安装说明</a> · <a href="https://www.tampermonkey.net/faq.php#Q209">脚本运行权限说明</a></small>
+</main>
+</html>

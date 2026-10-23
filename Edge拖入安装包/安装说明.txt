@@ -1,0 +1,38 @@
+DeepSeek 对话归档 · Edge 油猴安装包
+
+【首次准备，只需一次】
+1. 在 Edge 安装 Tampermonkey（油猴）：
+   https://www.tampermonkey.net/ （选择 Microsoft Edge）
+2. 在 Edge 地址栏输入 edge://extensions 并回车。
+3. 找到 Tampermonkey → 详细信息 → 开启“允许访问文件 URL”。
+4. 如果有“允许用户脚本”，请开启；如果没有，在扩展管理页开启“开发人员模式”。
+   浏览器若另外询问是否允许油猴运行用户脚本，请允许。
+
+【拖入安装】
+1. 如果下载的是 ZIP，先解压整个文件夹。
+2. 把 deepseek-archiver.user.js 从文件夹拖到 Edge 普通网页的内容区域。
+   不要拖 ZIP，也不要拖到“扩展”管理页面。
+3. 油猴会显示脚本安装确认页，点击“安装”。
+4. 打开 https://chat.deepseek.com 并登录，已打开的页面请刷新。
+5. 右下角出现“DeepSeek 归档 · Word”，可导出当前会话或全部会话。
+
+【如果拖入后显示代码或下载文件】
+确认拖入的文件以 .user.js 结尾，且上述本地文件访问开关已经开启。
+仍然不行：油猴 → 管理面板 → 实用工具 → 导入 → 选择文件，选择本包内
+deepseek-archiver.user.js，按提示安装。
+也可以油猴 → 添加新脚本，粘贴此文件全部内容后按 Ctrl+S。
+
+【包内内容】
+deepseek-archiver.user.js：独立脚本，无需 Python、Node 或额外代码库。
+安装引导.html：可用 Edge 打开，查看安装步骤和脚本链接。
+
+【功能及验证范围】
+保留原目录中已有的油猴脚本，未改动导出逻辑，脚本版本仍为 1.0.0。
+支持单会话 Word、全部会话 ZIP、合并 Word、思考过程和 JSON 备份选项。
+仅匹配 https://chat.deepseek.com/*，读取该网站登录态和会话接口。
+已通过 JavaScript 语法检查、模拟接口导出和文档结构检查。
+未使用你的真实账号验证当前 DeepSeek 接口或 Edge 中的安装确认页。
+
+官方安装说明：https://www.tampermonkey.net/faq.php#Q102
+本地文件权限：https://www.tampermonkey.net/faq.php#Q204
+脚本运行权限：https://www.tampermonkey.net/faq.php#Q209
