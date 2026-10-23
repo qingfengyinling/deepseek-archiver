@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+tests/out/
+node_modules/
+原始数据.json
+DeepSeek归档_*.zip
+我的归档/
